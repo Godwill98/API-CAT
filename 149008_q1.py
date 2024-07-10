@@ -1,4 +1,4 @@
-# Patient management system
+# Hospital Patient management system
 
 # Function to add a new patient
 def add_patient(patients):
@@ -7,12 +7,12 @@ def add_patient(patients):
     illness = input("Enter patient's illness: ")
     patient = {'name': name, 'age': age, 'illness': illness}
     patients.append(patient)
-    print(f"Patient {name} added successfully.")
+    print(f"Patient {name} registered successfuly..")
 
-# Function to display all patients
+# Function to display all patients......
 def display_patients(patients):
     if not patients:
-        print("No patients in the system.")
+        print("No patients in record in the system.")
     else:
         for patient in patients:
             print(f"Name: {patient['name']}, Age: {patient['age']}, Illness: {patient['illness']}")
